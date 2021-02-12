@@ -12,9 +12,10 @@ export default function useForm(initialValue) {
     const handleSubmit = (e) => {
         e.preventDefault();
         setShowSuccessMessage(true);
+        console.log('success message status',showSuccessMessage)
     };
     
 
-    return [showSuccessMessage,setShowSuccessMessage,values,setValues, handleChanges,handleSubmit]
+    return [showSuccessMessage,values, handleChanges, handleSubmit]
   
 }
